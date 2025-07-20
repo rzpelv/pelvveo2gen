@@ -39,27 +39,21 @@ export const VeoLogo: React.FC<IconProps> = ({ className }) => (
 
 export const MagicWandIcon: React.FC<IconProps> = ({ className }) => (
   <svg
-    className={className}
     xmlns="http://www.w3.org/2000/svg"
+    className={className}
     width="24"
     height="24"
     viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
     strokeWidth="2"
+    stroke="currentColor"
+    fill="none"
     strokeLinecap="round"
     strokeLinejoin="round"
   >
-    <path d="M5 3v4" />
-    <path d="M19 17v4" />
-    <path d="M3 5h4" />
-    <path d="M17 19h4" />
-    <path d="M12 3v4" />
-    <path d="M12 17v4" />
-    <path d="M10 5h4" />
-    <path d="M10 19h4" />
-    <path d="m3 10 4 3 3-7 4 3 3-7" />
-    <path d="m3 14 4 3 3-7 4 3 3-7" />
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M6 21l15 -15l-3 -3l-15 15l3 3" />
+    <path d="M15 6l3 3" />
+    <path d="M9 12l3 3" />
   </svg>
 );
 

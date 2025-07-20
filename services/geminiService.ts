@@ -1,11 +1,9 @@
 
 import { GoogleGenAI } from "@google/genai";
 
-// Ensure the API key is available in the environment variables.
-if (!process.env.API_KEY) {
-    throw new Error("API_KEY environment variable not set.");
-}
-
+// The API key is now checked during the API call, not on initial load.
+// This prevents the app from crashing with a blank screen if the
+// environment variable isn't immediately available.
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const model = "gemini-2.5-flash";
